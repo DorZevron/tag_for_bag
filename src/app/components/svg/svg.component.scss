@@ -1,0 +1,986 @@
+@font-face {
+    font-family: 'leumicons2';
+    src:
+        url('../../../assets/icons/leumicons2.woff2?7clsrs') format('woff2'),
+        url('../../../assets/icons/leumicons2.ttf?7clsrs') format('truetype'),
+        url('../../../assets/icons/leumicons2.woff?7clsrs') format('woff'),
+        url('../../../assets/icons/leumicons2.svg?7clsrs#leumicons2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'leumicons2' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-mortgage-people:before {
+    content: "\e90d";
+    color: #405c76;
+}
+
+.icon-icon-people:before {
+    content: "\e90e";
+}
+
+.icon-icon-mortgage-home .path1:before {
+    content: "\e90f";
+    color: none;
+}
+
+.icon-icon-mortgage-home .path2:before {
+    content: "\e910";
+    margin-left: -1.3330078125em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icon-mortgage-home .path3:before {
+    content: "\e911";
+    margin-left: -1.3330078125em;
+    color: rgb(70, 92, 116);
+}
+
+.icon-crypto:before {
+    content: "\e90c";
+}
+
+.icon-exit:before {
+    content: "\e907";
+}
+
+.icon-fill_in:before {
+    content: "\e903";
+}
+
+.icon-incoming:before {
+    content: "\e904";
+}
+
+.icon-outgoing:before {
+    content: "\e906";
+}
+
+.icon-car1:before {
+    content: "\e908";
+}
+
+.icon-calendar2:before {
+    content: "\e814";
+}
+
+.icon-arrow:before {
+    content: "\e901";
+}
+
+.icon-in_process:before {
+    content: "\e902";
+}
+
+.icon-talk_to_us:before {
+    content: "\e900";
+}
+
+.icon-back-squre:before {
+    content: "\e800";
+}
+
+.icon-bar-high:before {
+    content: "\e801";
+}
+
+.icon-bar-wide:before {
+    content: "\e804";
+}
+
+.icon-loan-nis:before {
+    content: "\e807";
+}
+
+.icon-print:before {
+    content: "\e808";
+}
+
+.icon-profile-left:before {
+    content: "\e809";
+}
+
+.icon-bis-arrow-r:before {
+    content: "\e80a";
+}
+
+.icon-bis-arrow:before {
+    content: "\e80b";
+}
+
+.icon-dropdown:before {
+    content: "\e803";
+}
+
+.icon-dropdown-up:before {
+    content: "\e805";
+}
+
+.icon-feed-and-sign:before {
+    content: "\e80c";
+}
+
+.icon-signature-fill:before {
+    content: "\e90b";
+}
+
+.icon-signature:before {
+    content: "\e80d";
+}
+
+.icon-edit-full:before {
+    content: "\e84c";
+}
+
+.icon-edit:before {
+    content: "\e806";
+}
+
+.icon-address:before {
+    content: "\e80e";
+}
+
+.icon-mailing-address:before {
+    content: "\e80f";
+}
+
+.icon-phone:before {
+    content: "\e810";
+}
+
+.icon-mobile:before {
+    content: "\e811";
+}
+
+.icon-glyph:before {
+    content: "\e812";
+}
+
+.icon-logoff:before {
+    content: "\e813";
+}
+
+.icon-bis-check:before {
+    content: "\e815";
+}
+
+.icon-profile-right-1:before {
+    content: "\e816";
+}
+
+.icon-lock-open:before {
+    content: "\e817";
+}
+
+.icon-lock-close:before {
+    content: "\e818";
+}
+
+.icon-long-arrow:before {
+    content: "\e819";
+}
+
+.icon-purse:before {
+    content: "\e81a";
+}
+
+.icon-cancle:before {
+    content: "\e81b";
+}
+
+.icon-date-fill:before {
+    content: "\e81c";
+}
+
+.icon-plane:before {
+    content: "\e81d";
+}
+
+.icon-delivery:before {
+    content: "\e81e";
+}
+
+.icon-date-stroke:before {
+    content: "\e81f";
+}
+
+.icon-check:before {
+    content: "\e820";
+}
+
+.icon-question:before {
+    content: "\e821";
+}
+
+.icon-back:before {
+    content: "\e822";
+}
+
+.icon-minus:before {
+    content: "\e823";
+}
+
+.icon-envelope:before {
+    content: "\e824";
+}
+
+.icon-calculator:before {
+    content: "\e825";
+}
+
+.icon-cash:before {
+    content: "\e826";
+}
+
+.icon-card:before {
+    content: "\e827";
+}
+
+.icon-excl:before {
+    content: "\e828";
+}
+
+.icon-expenditure:before {
+    content: "\e829";
+}
+
+.icon-facebook:before {
+    content: "\e82a";
+}
+
+.icon-mortgage-nis:before {
+    content: "\e82b";
+}
+
+.icon-mortgage-eru:before {
+    content: "\e82c";
+}
+
+.icon-right:before {
+    content: "\e82d";
+}
+
+.icon-search-1:before {
+    content: "\e82e";
+}
+
+.icon-send-clock:before {
+    content: "\e82f";
+}
+
+.icon-talk:before {
+    content: "\e830";
+}
+
+.icon-transfer-arrow-left:before {
+    content: "\e833";
+}
+
+.icon-transfer-arrow-right:before {
+    content: "\e834";
+}
+
+.icon-transfer-circle-left:before {
+    content: "\e835";
+}
+
+.icon-transfers:before {
+    content: "\e836";
+}
+
+.icon-write:before {
+    content: "\e837";
+}
+
+.icon-x:before {
+    content: "\e838";
+}
+
+.icon-done:before {
+    content: "\e802";
+}
+
+.icon-bell:before {
+    content: "\e839";
+}
+
+.icon-bell-full:before {
+    content: "\e83a";
+}
+
+.icon-help-buble:before {
+    content: "\e83b";
+}
+
+.icon-help-buble-full:before {
+    content: "\e83c";
+}
+
+.icon-minus-circle:before {
+    content: "\e83d";
+}
+
+.icon-multi-chekcs:before {
+    content: "\e83e";
+}
+
+.icon-reverse-display1:before {
+    content: "\e83f";
+}
+
+.icon-reverse-display2:before {
+    content: "\e840";
+}
+
+.icon-safe:before {
+    content: "\e841";
+}
+
+.icon-save:before {
+    content: "\e842";
+}
+
+.icon-search-2:before {
+    content: "\e843";
+}
+
+.icon-time:before {
+    content: "\e844";
+}
+
+.icon-transfer-circle-right:before {
+    content: "\e845";
+}
+
+.icon-view:before {
+    content: "\e846";
+}
+
+.icon-website:before {
+    content: "\e847";
+}
+
+.icon-walk:before {
+    content: "\e848";
+}
+
+.icon-feed:before {
+    content: "\e849";
+}
+
+.icon-alert-full:before {
+    content: "\e84a";
+}
+
+.icon-info-full:before {
+    content: "\e84b";
+}
+
+.icon-alert-outlined:before {
+    content: "\e84d";
+}
+
+.icon-excl2:before {
+    content: "\e84e";
+}
+
+.icon-alarm:before {
+    content: "\e84f";
+}
+
+.icon-waiting-1:before {
+    content: "\e850";
+}
+
+.icon-share:before {
+    content: "\e851";
+}
+
+.icon-download:before {
+    content: "\e852";
+}
+
+.icon-line:before {
+    content: "\e853";
+}
+
+.icon-duplicate:before {
+    content: "\e854";
+}
+
+.icon-gear:before {
+    content: "\e855";
+}
+
+.icon-filter:before {
+    content: "\e856";
+}
+
+.icon-split:before {
+    content: "\e857";
+}
+
+.icon-star:before {
+    content: "\e858";
+}
+
+.icon-mail-24:before {
+    content: "\e859";
+}
+
+.icon-regular-mail:before {
+    content: "\e85a";
+}
+
+.icon-pdf:before {
+    content: "\e85b";
+}
+
+.icon-collecting-point:before {
+    content: "\e85c";
+}
+
+.icon-add-contact:before {
+    content: "\e85d";
+}
+
+.icon-youtube:before {
+    content: "\e85e";
+}
+
+.icon-create:before {
+    content: "\e85f";
+}
+
+.icon-bank:before {
+    content: "\e860";
+}
+
+.icon-bank1:before {
+    content: "\e861";
+}
+
+.icon-bank2:before {
+    content: "\e862";
+}
+
+.icon-car:before {
+    content: "\e863";
+}
+
+.icon-bonds:before {
+    content: "\e864";
+}
+
+.icon-family:before {
+    content: "\e865";
+}
+
+.icon-other-1:before {
+    content: "\e866";
+}
+
+.icon-student:before {
+    content: "\e867";
+}
+
+.icon-chat:before {
+    content: "\e868";
+}
+
+.icon-cheak-in:before {
+    content: "\e869";
+}
+
+.icon-cheak-out:before {
+    content: "\e86a";
+}
+
+.icon-chekbox:before {
+    content: "\e86b";
+}
+
+.icon-chekbox-v:before {
+    content: "\e870";
+}
+
+.icon-circles:before {
+    content: "\e871";
+}
+
+.icon-clips:before {
+    content: "\e872";
+}
+
+.icon-commissions:before {
+    content: "\e873";
+}
+
+.icon-debit:before {
+    content: "\e874";
+}
+
+.icon-delete:before {
+    content: "\e875";
+}
+
+.icon-doc:before {
+    content: "\e876";
+}
+
+.icon-doc-delete:before {
+    content: "\e877";
+}
+
+.icon-flip:before {
+    content: "\e878";
+}
+
+.icon-foreign:before {
+    content: "\e879";
+}
+
+.icon-funds:before {
+    content: "\e87a";
+}
+
+.icon-hand:before {
+    content: "\e87b";
+}
+
+.icon-headphones:before {
+    content: "\e87c";
+}
+
+.icon-heart:before {
+    content: "\e87d";
+}
+
+.icon-help:before {
+    content: "\e87e";
+}
+
+.icon-info-1:before {
+    content: "\e87f";
+}
+
+.icon-left:before {
+    content: "\e880";
+}
+
+.icon-list:before {
+    content: "\e881";
+}
+
+.icon-loan-dollar:before {
+    content: "\e882";
+}
+
+.icon-loan-eru:before {
+    content: "\e883";
+}
+
+.icon-mortgages:before {
+    content: "\e884";
+}
+
+.icon-navigation:before {
+    content: "\e885";
+}
+
+.icon-newslatter:before {
+    content: "\e886";
+}
+
+.icon-no-service:before {
+    content: "\e887";
+}
+
+.icon-open:before {
+    content: "\e888";
+}
+
+.icon-orders:before {
+    content: "\e889";
+}
+
+.icon-other:before {
+    content: "\e88a";
+}
+
+.icon-payments:before {
+    content: "\e88b";
+}
+
+.icon-pie-fill:before {
+    content: "\e88c";
+}
+
+.icon-pie-outline:before {
+    content: "\e88d";
+}
+
+.icon-play:before {
+    content: "\e88e";
+}
+
+.icon-plus-circle:before {
+    content: "\e88f";
+}
+
+.icon-mortgage-dollar:before {
+    content: "\e890";
+}
+
+.icon-assistant-18:before {
+    content: "\e891";
+}
+
+.icon-assistant-15:before {
+    content: "\e892";
+}
+
+.icon-assistant-14:before {
+    content: "\e893";
+}
+
+.icon-assistant-13:before {
+    content: "\e894";
+}
+
+.icon-assistant-12:before {
+    content: "\e895";
+}
+
+.icon-assistant-11:before {
+    content: "\e898";
+}
+
+.icon-assistant-10:before {
+    content: "\e899";
+}
+
+.icon-assistant-8:before {
+    content: "\e89a";
+}
+
+.icon-assistant-1:before {
+    content: "\e89c";
+}
+
+.icon-assistant-2:before {
+    content: "\e89d";
+}
+
+.icon-assistant-3:before {
+    content: "\e89e";
+}
+
+.icon-assistant-4:before {
+    content: "\e89f";
+}
+
+.icon-assistant-5:before {
+    content: "\e8a0";
+}
+
+.icon-assistant-6:before {
+    content: "\e8a1";
+}
+
+.icon-assistant-7:before {
+    content: "\e8a2";
+}
+
+.icon-assistant-9:before {
+    content: "\e8a3";
+}
+
+.icon-assistant-16:before {
+    content: "\e8a4";
+}
+
+.icon-assistant-17:before {
+    content: "\e8a5";
+}
+
+.icon-assistant-19:before {
+    content: "\e89b";
+}
+
+.icon-assistant-20:before {
+    content: "\e905";
+}
+
+.icon-logout:before {
+    content: "\e8a6";
+}
+
+.icon-info-2:before {
+    content: "\e8a7";
+}
+
+.icon-down:before {
+    content: "\e8a8";
+}
+
+.icon-attention:before {
+    content: "\e8a9";
+}
+
+.icon-lamp:before {
+    content: "\e8aa";
+}
+
+.icon-frame:before {
+    content: "\e8ab";
+}
+
+.icon-stock-market:before {
+    content: "\e8ac";
+}
+
+.icon-savings:before {
+    content: "\e8ad";
+}
+
+.icon-money-transfer:before {
+    content: "\e8ae";
+}
+
+.icon-wallet:before {
+    content: "\e8af";
+}
+
+.icon-credit-cards:before {
+    content: "\e8b0";
+}
+
+.icon-summary-icon:before {
+    content: "\e8b1";
+}
+
+.icon-done-thin:before {
+    content: "\e8b2";
+}
+
+.icon-active:before {
+    content: "\e8b4";
+}
+
+.icon-alert:before {
+    content: "\e8b6";
+}
+
+.icon-expired:before {
+    content: "\e8b8";
+}
+
+.icon-plus:before {
+    content: "\e8db";
+}
+
+.icon-ezra_no_circle:before {
+    content: "\e8dc";
+}
+
+.icon-desktop_icon_excel:before {
+    content: "\e923";
+}
+
+.icon-info:before {
+    content: "\e924";
+}
+
+.icon-partners-outline:before {
+    content: "\e8b3";
+}
+
+.icon-partners:before {
+    content: "\e925";
+}
+
+.icon-waiting_for_partner:before {
+    content: "\e909";
+}
+
+.icon-avatar:before {
+    content: "\e926";
+}
+
+.icon-popup:before {
+    content: "\e927";
+}
+
+.icon-waiting:before {
+    content: "\e928";
+}
+
+.icon-wobi:before {
+    content: "\e929";
+}
+
+.icon-tik_nechasim:before {
+    content: "\e92b";
+}
+
+.icon-hagdarot:before {
+    content: "\e96e";
+}
+
+.icon-chipus:before {
+    content: "\e96f";
+}
+
+.icon-doar:before {
+    content: "\e970";
+}
+
+.icon-ezra:before {
+    content: "\e972";
+}
+
+.icon-negishut:before {
+    content: "\e973";
+}
+
+.icon-change_user:before {
+    content: "\e974";
+}
+
+.icon-define_name:before {
+    content: "\e975";
+}
+
+.icon-edit_details:before {
+    content: "\e976";
+}
+
+.icon-escort:before {
+    content: "\e977";
+}
+
+.icon-get_notifications:before {
+    content: "\e978";
+}
+
+.icon-harshaot_sheli:before {
+    content: "\e979";
+}
+
+.icon-help_system:before {
+    content: "\e97a";
+}
+
+.icon-help_videos:before {
+    content: "\e97b";
+}
+
+.icon-horaot:before {
+    content: "\e97c";
+}
+
+.icon-join:before {
+    content: "\e97d";
+}
+
+.icon-schedule_call:before {
+    content: "\e97e";
+}
+
+.icon-schedule_meeting:before {
+    content: "\e97f";
+}
+
+.icon-share_info:before {
+    content: "\e980";
+}
+
+.icon-sisma:before {
+    content: "\e981";
+}
+
+.icon-speech_bubble:before {
+    content: "\e982";
+}
+
+.icon-write_to_banker:before {
+    content: "\e983";
+}
+
+.icon-bait:before {
+    content: "\e984";
+}
+
+.icon-cartis_ashrai:before {
+    content: "\e985";
+}
+
+.icon-checkim:before {
+    content: "\e986";
+}
+
+.icon-dochot:before {
+    content: "\e987";
+}
+
+.icon-gemel_pensia:before {
+    content: "\e988";
+}
+
+.icon-haavarot:before {
+    content: "\e989";
+}
+
+.icon-lowns_mortgage:before {
+    content: "\e98a";
+}
+
+.icon-matach:before {
+    content: "\e98b";
+}
+
+.icon-nihul_chatimot:before {
+    content: "\e98c";
+}
+
+.icon-nihul_harshaot:before {
+    content: "\e98d";
+}
+
+.icon-over_va_shav:before {
+    content: "\e98e";
+}
+
+.icon-pikdonot_savings:before {
+    content: "\e98f";
+}
+
+.icon-sachbal:before {
+    content: "\e990";
+}
+
+.icon-trade:before {
+    content: "\e991";
+}
+
+.icon-never-minus:before {
+    content: "\e90a";
+    color: #465c74;
+}

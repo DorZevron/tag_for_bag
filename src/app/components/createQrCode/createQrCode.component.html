@@ -1,0 +1,35 @@
+<div class="container form mt-4 ">
+  <form [formGroup]="form" (ngSubmit)="onSubmit2()">
+    <div class="row">
+      <div class="">
+        <div class="form-group ">
+
+          <div class="mb-3 ">
+            <label for="name" class="form-label">Name: </label>
+            <input type="text" name="name" id="name" class="form-control" aria-describedby="nameHelper"
+              formControlName="name">
+            <div id="nameHelper" class="form-text">Enter your name in English</div>
+          </div>
+
+          <div class="mb-3 ">
+            <label for="phoneNumber" class="form-label">Phone Number: </label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber"
+              pattern="[0-9] {13}">
+              <!-- TODO: change the amount of numbers -->
+          </div>
+
+          <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Send</button>
+        </div>
+
+        <div *ngIf="isDisplay" class="qrcodeWithLink text-center">
+          <qrcode [qrdata]="data" [width]="300" [errorCorrectionLevel]="'M'" (qrCodeURL)="onChangeURL($event)"
+            [imageSrc]="'./../assets/images/hyperlink-logo.png'" [imageHeight]="45" [imageWidth]="85"
+            [ariaLabel]="'QR Code image with the following content...'"></qrcode>
+          <a [href]="qrCodeDownloadLink" class="btn btn-primary me-2" download="qrcode">Download QR Code
+            Image</a>
+          <a [href]="data" class="btn btn-success " download="qrcode">Link For Whatsapp</a>
+        </div>
+      </div>
+    </div>  
+  </form>
+</div>
