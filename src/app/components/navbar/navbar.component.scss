@@ -1,0 +1,11 @@
+@import '../../../assets/fonts/fonts.scss';
+// @import '../../../assets/icons/icons.css';
+
+.nav-link {
+    font-size: $font-size-content;
+}
+
+img {
+    content: url(../../../assets/images/icon-safety-bag.svg);
+    width: 50px;
+}

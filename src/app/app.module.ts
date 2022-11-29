@@ -11,12 +11,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CreateQrCodeComponent } from './components/createQrCode/createQrCode.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { SvgComponent } from './components/svg/svg.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateQrCodeComponent,
-    SvgComponent
+    SvgComponent,
+    NavbarComponent,
+    AboutUsComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ export class QrCodeApiService {
   constructor(private _http: HttpClient) { }
 
 
+  //Not Used
   getQrCodeFromApi(name: any, phoneNum: any) {
     debugger
     // let headers = {

@@ -1,0 +1,47 @@
+@import '../../../assets/fonts/fonts.scss';
+// @import '../../../assets/icons/icons.css';
+
+.header {
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: $font-size-header;
+        color: blue;
+    }
+
+}
+
+.second-header {
+    h2 {
+        font-size: $font-size-label;
+        text-align: center;
+        margin: 20px 30px;
+    }
+
+}
+
+.content {
+    text-align: center;
+    margin: 0px 30px;
+    padding: 30px 50px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: rgb(24, 64, 196, 0.03);
+    max-width: 500px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image {
+        .passport {
+            content: url('../../../assets/images/icon-visa-travel-document.svg');
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    }
+}

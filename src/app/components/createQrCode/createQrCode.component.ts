@@ -12,7 +12,7 @@ export class CreateQrCodeComponent implements OnInit {
   imgQrCode: any;
   errorMessage: string | undefined;
   public form: FormGroup;
-  data: string = 'sssssssssssssssssssssssssssss';
+  data: string = '';
   // public myAngularxQrCode: string = "";
   public qrCodeDownloadLink: SafeUrl = "";
   isDisplay: boolean = false;
@@ -23,15 +23,6 @@ export class CreateQrCodeComponent implements OnInit {
       name: ['', Validators.required],
       phoneNumber: ['', Validators.required]
     })
-    // this.form = new FormGroup({
-    //   name: new FormControl(''),
-    //   phoneNumber: new FormControl('')
-    // })
-
-    // this.form = this.formBuilder.group({
-    //   name: '',
-    //   phoneNumber: ''
-    // })
   }
 
   ngOnInit() {
@@ -47,12 +38,24 @@ export class CreateQrCodeComponent implements OnInit {
     debugger;
     let phone = this.form.controls['phoneNumber'].value;
     let name = this.form.controls['name'].value;
+    let phoneNumberSlice = this.checkNumber(phone);
     let textWhatsApp = `Hello ${name}, I've found your luggage! Please contact me so you can receive it back.`;
-    this.data = `https://wa.me/${phone}/?text=${encodeURIComponent(textWhatsApp)}`;
+    this.data = `https://wa.me/+972${phoneNumberSlice}/?text=${encodeURIComponent(textWhatsApp)}`;
     this.isDisplay = true;
     console.table(`link data: ${this.data}`);
   }
 
+
+  checkNumber(phoneNumber: any): string {
+    // TODO: func for If a number contains the digit 0 remove until I find a solution for it
+    let phoneNumSlice
+    debugger;
+    if (phoneNumber.indexOf(0) == 0) {
+      phoneNumSlice = phoneNumber.slice(1, phoneNumber.length);
+      console.log(`phone number after slice: ${phoneNumSlice}`);
+    }
+    return phoneNumSlice
+  }
   // onSubmit() {
   //   debugger;
   //   let phone = this.form.controls['phoneNumber'].value;
