@@ -10,6 +10,18 @@
           "style": "scss"
         }
       },
+      "i18n": {
+        "locales": {
+          "en": {
+            "translation": "src/locales/messages.en.xlf",
+            "baseHref": ""
+          },
+          "he": {
+            "translation": "src/locales/messages.he.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -30,13 +42,12 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "./node_modules/intl-tel-input/build/css/intlTelInput.css",
               "src/styles.scss"
             ],
             "scripts": [
-     
               "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            ],
+            "localize": false
           },
           "configurations": {
             "production": {
@@ -67,6 +78,18 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "he": {
+              "localize": [
+                "he"
+              ],
+              "baseHref": "/he/"
+            },
+            "en": {
+              "localize": [
+                "en"
+              ],
+              "baseHref": "/en/"
             }
           },
           "defaultConfiguration": "production"
@@ -79,6 +102,12 @@
             },
             "development": {
               "browserTarget": "tik-tag:build:development"
+            },
+            "en": {
+              "browserTarget": "tik-tag:build:en"
+            },
+            "he": {
+              "browserTarget": "tik-tag:build:he"
             }
           },
           "defaultConfiguration": "development"

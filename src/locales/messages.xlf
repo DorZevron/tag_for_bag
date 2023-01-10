@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="templates.MessageName" datatype="html">
+        <source>שם מלא: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createQrCode/createQrCode.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.TagMessageName" datatype="html">
+        <source>הכניסו את שמכם באנגלית.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createQrCode/createQrCode.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.WhatsappNum" datatype="html">
+        <source>מספר וואטסאפ: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createQrCode/createQrCode.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.btnSend" datatype="html">
+        <source>שלח</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createQrCode/createQrCode.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.Title" datatype="html">
+        <source>Tag For Bag - הפתרון למזוודות אבודות!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-page/main-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.SubTitle" datatype="html">
+        <source>עם Tag For Bag תכינו תג QR מותאם אישית שאותו תוכלו להדפיס לגזור ולהדביק על המזוודה</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-page/main-page.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates.InnerText" datatype="html">
+        <source>חוששים לאבד את המזוודה בשדה התעופה? גם אתם נבהלתם מערימות המזוודות בנתב&quot;ג? אין סיבה לחשוש! עם תיק תג תיצרו תג QR שאפשר להדפיס ולהדביק על המזוודה או התיק, ובסריקתו מגיעים אוטומטית לצ&apos;אט WhatsApp איתכם כך שיהיה ניתן להשיג אתכם תיק תק ולמנוע אובדן של המזוודה היקרה שלכם!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-page/main-page.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

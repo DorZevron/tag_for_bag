@@ -5,20 +5,29 @@
         <div class="form-group ">
 
           <div class="mb-3 mx-auto col-md-10">
-            <label for="name" class="form-label ">שם מלא: </label>
+            <label for="name" class="form-label" i18n="@@templates.MessageName">שם מלא: </label>
             <input type="text" name="name" id="name" class="form-control" aria-describedby="nameHelper"
               formControlName="name">
-            <div id="nameHelper" class="form-text">הכניסו את שמכם באנגלית.</div>
+            <div id="nameHelper" class="form-text" i18n="@@templates.TagMessageName">הכניסו את שמכם באנגלית.</div>
           </div>
 
           <div class="mb-3 mx-auto col-md-10">
-            <label for="phoneNumber" class="form-label">מספר וואטסאפ: </label>
-            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber">
-            <!-- TODO: change the amount of numbers -->
+            <div>
+              <label for="phoneNumber" class="form-label" i18n="@@templates.WhatsappNum">מספר וואטסאפ: </label>
+            </div>
+            <div>
+              <!-- <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber"
+                ng2TelInput [ng2TelInputOptions]="{initialCountry: 'in'}" (ng2TelOutput)="getNumber($event)"
+                (intlTelInputObject)="telInputObject($event)" (countryChange)="onCountryChange($event)"> -->
+              <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber">
+              <!-- TODO: change the amount of numbers -->
+            </div>
+
           </div>
 
-          <div class="mx-auto">
-            <button type="submit" class="btn btn-primary " [disabled]="!form.valid">שלח</button>
+          <div class="mx-auto mb-3 col-md-10">
+            <button type="submit" class="btn btn-primary " [disabled]="!form.valid"
+              i18n="@@templates.btnSend">שלח</button>
           </div>
 
         </div>
@@ -27,7 +36,7 @@
           <qrcode [qrdata]="data" [width]="300" [errorCorrectionLevel]="'M'" (qrCodeURL)="onChangeURL($event)"
             [imageSrc]="'./../assets/images/hyperlink-logo.png'" [imageHeight]="45" [imageWidth]="85"
             [ariaLabel]="'QR Code image with the following content...'"></qrcode>
-          <a [href]="qrCodeDownloadLink" class="btn btn-primary ms-2" download="qrcode">Download QR Code
+          <a [href]="qrCodeDownloadLink" class="btn btn-primary ms-2 me-2" download="qrcode">Download QR Code
             Image</a>
           <a [href]="data" class="btn btn-success " download="qrcode">Link For Whatsapp</a>
         </div>

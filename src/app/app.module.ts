@@ -14,6 +14,9 @@ import { SvgComponent } from './components/svg/svg.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+// import { Ng2TelInputModule } from 'ng2-tel-input';
+
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    QRCodeModule
+    QRCodeModule,
+    // Ng2TelInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

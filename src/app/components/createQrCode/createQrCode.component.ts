@@ -16,6 +16,7 @@ export class CreateQrCodeComponent implements OnInit {
   // public myAngularxQrCode: string = "";
   public qrCodeDownloadLink: SafeUrl = "";
   isDisplay: boolean = false;
+  phoneNumWithPrefix: string = '';
 
   constructor(private apiService: QrCodeApiService, private formBuilder: FormBuilder) {
 
@@ -38,43 +39,26 @@ export class CreateQrCodeComponent implements OnInit {
     debugger;
     let phone = this.form.controls['phoneNumber'].value;
     let name = this.form.controls['name'].value;
-    let phoneNumberSlice = this.checkNumber(phone);
     let textWhatsApp = `Hello ${name}, I've found your luggage! Please contact me so you can receive it back.`;
-    this.data = `https://wa.me/+972${phoneNumberSlice}/?text=${encodeURIComponent(textWhatsApp)}`;
+    this.data = `https://wa.me/${phone}/?text=${encodeURIComponent(textWhatsApp)}`;
     this.isDisplay = true;
     console.table(`link data: ${this.data}`);
   }
 
-
-  checkNumber(phoneNumber: any): string {
-    // TODO: func for If a number contains the digit 0 remove until I find a solution for it
-    let phoneNumSlice
-    debugger;
-    if (phoneNumber.indexOf(0) == 0) {
-      phoneNumSlice = phoneNumber.slice(1, phoneNumber.length);
-      console.log(`phone number after slice: ${phoneNumSlice}`);
-    }
-    return phoneNumSlice
-  }
-  // onSubmit() {
-  //   debugger;
-  //   let phone = this.form.controls['phoneNumber'].value;
-  //   let name = this.form.controls['name'].value;
-  //   this.apiService.getQrCodeFromApi(name, phone).subscribe({
-  //     next: (data) => {
-  //       debugger;
-  //       this.imgQrCode = data;
-  //       console.log('data: ', data);
-  //       console.log('imgQrCode: ', this.imgQrCode);
-  //     },
-  //     error: (err) => {
-  //       debugger;
-  //       // this.errorMessage = err;
-  //       console.log('error: ', err)
-  //     }
-  //   });
-
+  // NPM Install ng2-tel-input
+  // Repository : github.com/gauravsoni119/ng2-tel-input
+  // getNumber(number: any) {
+  //   this.phoneNumWithPrefix = number;
+  //   console.log(`number phone: ${this.phoneNumWithPrefix}`);
+  // }
+  // telInputObject(number: any) {
+  //   let phoneNum = number;
+  //   console.log(`telInputObject: ${phoneNum}`);
   // }
 
+  // onCountryChange(number: any) {
+  //   let phoneNum = JSON.stringify(number);
+  //   console.log(`onCountryChange: ${phoneNum}`);
+  // }
 }
 
